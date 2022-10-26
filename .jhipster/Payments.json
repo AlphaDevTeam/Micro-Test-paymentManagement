@@ -1,0 +1,54 @@
+{
+  "applications": ["accountManagement", "paymentManagement"],
+  "changelogDate": "20221026215920",
+  "clientRootFolder": "paymentManagement",
+  "databaseType": "sql",
+  "dto": "no",
+  "embedded": false,
+  "entityTableName": "payments",
+  "fields": [
+    {
+      "fieldName": "notes",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "cashAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creditAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "creditCardAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "transactionID",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "locationCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "tenantCode",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    }
+  ],
+  "fluentMethods": true,
+  "jpaMetamodelFiltering": true,
+  "microserviceName": "paymentManagement",
+  "name": "Payments",
+  "pagination": "pagination",
+  "readOnly": false,
+  "relationships": [],
+  "service": "serviceClass"
+}
